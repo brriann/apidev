@@ -1,0 +1,13 @@
+variable scopes: env, global, collection
+
+pre-request and test scripts
+
+  chaining data between requests:
+    var jsonData = pm.response.json();
+    pm.globals.set("newToken", jsonData.headers['token-received']);
+  
+  controlling collection run flow:
+    postman.setNextRequest('Another_Request_In_Collection')
+
+mock servers
+
