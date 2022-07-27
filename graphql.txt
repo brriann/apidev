@@ -1,0 +1,20 @@
+
+
+# DociQL
+
+DociQL generates static API docs for a GraphQL service, using the Introspection endpoint
+
+https://github.com/wayfair/dociql
+
+https://wayfair.github.io/dociql/
+
+
+### Using
+
+npm install -g dociql
+
+(define a config.yml file, see dociql-config.yml as an example)
+
+dociql -d dociql-config.yml
+
+
